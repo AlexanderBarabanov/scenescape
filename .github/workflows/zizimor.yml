@@ -21,7 +21,7 @@ on:
       - release-*
   schedule:
     # Run security checks every day at 2 AM UTC
-    - cron: "0 2 * * *
+    - cron: "0 2 * * *"
 
   # Trigger workflow when enqueued to a merge group
   # (must be under 'on')
