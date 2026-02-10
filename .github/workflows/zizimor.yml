@@ -42,11 +42,11 @@ jobs:
       security-events: write # Needed to upload the results to code-scanning dashboard
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: "Checkout code"
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           persist-credentials: false
-      - name: Run Zizmor scan
+      - name: "Run Zizmor scan"
         uses: open-edge-platform/geti-ci/actions/zizmor@3a4b81ea648711eb638b34757427cd3ef71d19f1
         with:
           scan-scope: ${{ contains(fromJSON('["pull_request","merge_group"]'), github.event_name) && 'changed' || 'all' }}
