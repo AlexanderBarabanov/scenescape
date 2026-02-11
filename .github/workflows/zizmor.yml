@@ -2,8 +2,8 @@
 # SPDX-FileCopyrightText: (C) 2025 Intel Corporation
 # SPDX-License-Identifier: Apache-2.0
 
-name: "[Code Analysis] Zizimor Scan"
-run-name: "[Code Analysis] Zizimor Scan"
+name: "[Code Analysis] Zizmor Scan"
+run-name: "[Code Analysis] Zizmor Scan"
 
 on:
   workflow_dispatch: {}
@@ -35,8 +35,8 @@ concurrency:
 permissions: {}
 
 jobs:
-  zizimor-scan:
-    name: "Run Zizimor Scan"
+  zizmor-scan:
+    name: "Run Zizmor Scan"
     permissions:
       contents: read
       security-events: write # Needed to upload the results to code-scanning dashboard
